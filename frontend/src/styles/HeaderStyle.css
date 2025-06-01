@@ -1,0 +1,51 @@
+header {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 48px;
+  width: auto;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.navbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: color 0.2s;
+  font-family: var(--BebasNeue-font, 'Bebas Neue', sans-serif);
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #e3000e !important;
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.5rem 0;
+    text-align: right;
+  }
+  .logo img {
+    height: 40px;
+  }
+}
